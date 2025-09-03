@@ -1,0 +1,22 @@
+{
+  "name": "keymapgen",
+  "version": "1.0.0",
+  "description": "Cross-editor keymap synchronization tool workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["keymap", "editor", "synchronization", "monorepo"],
+  "author": "",
+  "license": "MIT"
+}

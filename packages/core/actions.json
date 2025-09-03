@@ -1,0 +1,139 @@
+{
+  "actions": {
+    "file.new": {
+      "description": "Create a new file"
+    },
+    "file.open": {
+      "description": "Open an existing file"
+    },
+    "file.save": {
+      "description": "Save the current file"
+    },
+    "file.saveAs": {
+      "description": "Save the current file with a new name"
+    },
+    "file.close": {
+      "description": "Close the current file"
+    },
+    "edit.undo": {
+      "description": "Undo the last action"
+    },
+    "edit.redo": {
+      "description": "Redo the last undone action"
+    },
+    "edit.cut": {
+      "description": "Cut selected text to clipboard"
+    },
+    "edit.copy": {
+      "description": "Copy selected text to clipboard"
+    },
+    "edit.paste": {
+      "description": "Paste text from clipboard"
+    },
+    "edit.selectAll": {
+      "description": "Select all text in the current document"
+    },
+    "edit.find": {
+      "description": "Find text in the current document"
+    },
+    "edit.replace": {
+      "description": "Find and replace text in the current document"
+    },
+    "navigation.goToLine": {
+      "description": "Go to a specific line number"
+    },
+    "navigation.goToDefinition": {
+      "description": "Go to the definition of the symbol under cursor"
+    },
+    "navigation.goToDeclaration": {
+      "description": "Go to the declaration of the symbol under cursor"
+    },
+    "navigation.goBack": {
+      "description": "Go back to the previous cursor position"
+    },
+    "navigation.goForward": {
+      "description": "Go forward to the next cursor position"
+    },
+    "code.format": {
+      "description": "Format the current document"
+    },
+    "code.comment": {
+      "description": "Toggle line comment"
+    },
+    "code.fold": {
+      "description": "Fold the current code block"
+    },
+    "code.unfold": {
+      "description": "Unfold the current code block"
+    },
+    "code.rename": {
+      "description": "Rename the symbol under cursor"
+    },
+    "debug.start": {
+      "description": "Start debugging session"
+    },
+    "debug.stepOver": {
+      "description": "Step over the current line during debugging"
+    },
+    "debug.stepInto": {
+      "description": "Step into the function call during debugging"
+    },
+    "debug.stepOut": {
+      "description": "Step out of the current function during debugging"
+    },
+    "debug.continue": {
+      "description": "Continue execution during debugging"
+    },
+    "debug.toggleBreakpoint": {
+      "description": "Toggle breakpoint on the current line"
+    },
+    "terminal.newTerminal": {
+      "description": "Open a new terminal"
+    },
+    "terminal.closeTerminal": {
+      "description": "Close the current terminal"
+    },
+    "navigation.nextWord": {
+      "description": "Move cursor to the next word"
+    },
+    "navigation.previousWord": {
+      "description": "Move cursor to the previous word"
+    },
+    "navigation.selectNextWord": {
+      "description": "Select to the next word"
+    },
+    "navigation.selectPreviousWord": {
+      "description": "Select to the previous word"
+    },
+    "navigation.addCursorAtNextMatch": {
+      "description": "Add cursor at the next occurrence of the current word"
+    },
+    "navigation.removeCursorAtPreviousMatch": {
+      "description": "Remove cursor from the previous occurrence of the current word"
+    },
+    "navigation.lineEnd": {
+      "description": "Move cursor to the end of the line"
+    },
+    "navigation.lineStart": {
+      "description": "Move cursor to the beginning of the line"
+    },
+    "navigation.fileEnd": {
+      "description": "Move cursor to the end of the file"
+    },
+    "navigation.fileStart": {
+      "description": "Move cursor to the beginning of the file"
+    },
+    "code.foldCurrent": {
+      "description": "Fold the current scope"
+    },
+    "code.unfoldCurrent": {
+      "description": "Unfold the current scope"
+    },
+    "code.foldAll": {
+      "description": "Fold all scopes"
+    },
+    "code.unfoldAll": {
+      "description": "Unfold all scopes"
+    }
+  }
+}

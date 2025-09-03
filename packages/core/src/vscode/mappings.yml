@@ -1,0 +1,136 @@
+# VSCode Action to Command Mappings
+# This file maps generic action IDs to VSCode-specific command IDs and contexts
+
+mappings:
+  file.new:
+    command: "workbench.action.files.newUntitledFile"
+  file.open:
+    command: "workbench.action.files.openFile"
+  file.save:
+    command: "workbench.action.files.save"
+  file.saveAs:
+    command: "workbench.action.files.saveAs"
+  file.close:
+    command: "workbench.action.closeActiveEditor"
+  
+  edit.undo:
+    command: "undo"
+    when: "editorTextFocus"
+  edit.redo:
+    command: "redo"
+    when: "editorTextFocus"
+  edit.cut:
+    command: "editor.action.clipboardCutAction"
+    when: "editorTextFocus && !editorReadonly"
+  edit.copy:
+    command: "editor.action.clipboardCopyAction"
+    when: "editorTextFocus"
+  edit.paste:
+    command: "editor.action.clipboardPasteAction"
+    when: "editorTextFocus && !editorReadonly"
+  edit.selectAll:
+    command: "editor.action.selectAll"
+    when: "editorTextFocus"
+  edit.find:
+    command: "actions.find"
+    when: "editorTextFocus"
+  edit.replace:
+    command: "editor.action.startFindReplaceAction"
+    when: "editorTextFocus && !editorReadonly"
+  
+  navigation.goToLine:
+    command: "workbench.action.gotoLine"
+  navigation.goToDefinition:
+    command: "editor.action.revealDefinition"
+    when: "editorTextFocus"
+  navigation.goToDeclaration:
+    command: "editor.action.revealDeclaration"
+    when: "editorTextFocus"
+  navigation.goBack:
+    command: "workbench.action.navigateBack"
+  navigation.goForward:
+    command: "workbench.action.navigateForward"
+  
+  code.format:
+    command: "editor.action.formatDocument"
+    when: "editorTextFocus && !editorReadonly"
+  code.comment:
+    command: "editor.action.commentLine"
+    when: "editorTextFocus && !editorReadonly"
+  code.fold:
+    command: "editor.fold"
+    when: "editorTextFocus"
+  code.unfold:
+    command: "editor.unfold"
+    when: "editorTextFocus"
+  code.rename:
+    command: "editor.action.rename"
+    when: "editorTextFocus && !editorReadonly"
+  
+  debug.start:
+    command: "workbench.action.debug.start"
+    when: "!inDebugMode"
+  debug.stepOver:
+    command: "workbench.action.debug.stepOver"
+    when: "inDebugMode"
+  debug.stepInto:
+    command: "workbench.action.debug.stepInto"
+    when: "inDebugMode"
+  debug.stepOut:
+    command: "workbench.action.debug.stepOut"
+    when: "inDebugMode"
+  debug.continue:
+    command: "workbench.action.debug.continue"
+    when: "inDebugMode"
+  debug.toggleBreakpoint:
+    command: "editor.debug.action.toggleBreakpoint"
+    when: "editorTextFocus"
+  
+  terminal.newTerminal:
+    command: "workbench.action.terminal.new"
+  terminal.closeTerminal:
+    command: "workbench.action.terminal.kill"
+
+  navigation.nextWord:
+    command: "cursorWordRight"
+    when: "editorTextFocus"
+  navigation.previousWord:
+    command: "cursorWordLeft"
+    when: "editorTextFocus"
+  navigation.selectNextWord:
+    command: "cursorWordRightSelect"
+    when: "editorTextFocus"
+  navigation.selectPreviousWord:
+    command: "cursorWordLeftSelect"
+    when: "editorTextFocus"
+  navigation.addCursorAtNextMatch:
+    command: "editor.action.addSelectionToNextFindMatch"
+    when: "editorTextFocus"
+  navigation.removeCursorAtPreviousMatch:
+    command: "editor.action.addSelectionToPreviousFindMatch"
+    when: "editorTextFocus"
+  navigation.lineEnd:
+    command: "cursorEnd"
+    when: "editorTextFocus"
+  navigation.lineStart:
+    command: "cursorHome"
+    when: "editorTextFocus"
+  navigation.fileEnd:
+    command: "cursorBottom"
+    when: "editorTextFocus"
+  navigation.fileStart:
+    command: "cursorTop"
+    when: "editorTextFocus"
+
+  code.foldCurrent:
+    command: "editor.fold"
+    when: "editorTextFocus"
+  code.unfoldCurrent:
+    command: "editor.unfold"
+    when: "editorTextFocus"
+  code.foldAll:
+    command: "editor.foldAll"
+    when: "editorTextFocus"
+  code.unfoldAll:
+    command: "editor.unfoldAll"
+    when: "editorTextFocus"

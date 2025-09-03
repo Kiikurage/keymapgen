@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeymapGen - Cross-Editor Keymap Synchronization</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>🔗 KeymapGen</h1>
+            <p class="subtitle">Cross-Editor Keymap Synchronization Tool</p>
+        </header>
+
+        <main class="main">
+            <!-- Main Tab Navigation -->
+            <div class="main-tabs">
+                <button class="main-tab-button active" data-main-tab="input">Input</button>
+                <button class="main-tab-button" data-main-tab="output">Output</button>
+            </div>
+
+            <div class="container">
+                <!-- Input Tab Content -->
+                <div id="input-main-tab" class="main-tab-pane active">
+                    <div class="input-section">
+                        <div class="section-header">
+                            <h2>Input Keymap Configuration</h2>
+                            <div class="mode-toggle">
+                                <span class="mode-label">Raw</span>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="mode-toggle" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                                <span class="mode-label">Rich</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Raw YAML Mode -->
+                        <div id="raw-yaml-mode" class="input-mode">
+                            <textarea 
+                                id="input-yaml" 
+                                placeholder="Paste your keymap YAML configuration here..."
+                                rows="15"
+                            ></textarea>
+                            <div class="example-link">
+                                <button id="load-example" class="link-button">Load example configuration</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Rich UI Mode -->
+                        <div id="rich-ui-mode" class="input-mode active">
+                            <div class="rich-ui-container">
+                                <div class="search-section">
+                                    <input 
+                                        type="text" 
+                                        id="action-search" 
+                                        class="action-search-input" 
+                                        placeholder="🔍 Search actions..."
+                                    />
+                                </div>
+                                <div class="all-actions-section">
+                                    <h3 class="section-title">Available Actions</h3>
+                                    <div class="action-list" id="all-actions"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Output Tab Content -->
+                <div id="output-main-tab" class="main-tab-pane">
+                    <div class="output-content">
+                        <div class="editor-selection">
+                            <label for="editor-select" class="editor-select-label">Target Editor:</label>
+                            <select id="editor-select" class="editor-select">
+                                <option value="vscode">📝 VS Code (keybindings.json)</option>
+                                <option value="intellij">💡 IntelliJ IDEs (keymap.xml)</option>
+                                <option value="visualstudio">🔷 Visual Studio (keybindings.vssettings)</option>
+                            </select>
+                        </div>
+
+                        <div id="output-section" class="output-section">
+                            <h2>Generated Configuration</h2>
+                            <textarea 
+                                id="output-config" 
+                                readonly
+                                rows="15"
+                                placeholder="Generated configuration will appear here after conversion..."
+                            ></textarea>
+                            <div class="output-actions">
+                                <button id="download-btn" class="secondary-button">
+                                    📥 Download File
+                                </button>
+                                <button id="copy-btn" class="secondary-button">
+                                    📋 Copy to Clipboard
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>
+                <a href="https://github.com/Kiikurage/keymapgen" target="_blank" rel="noopener">
+                    📖 Documentation
+                </a>
+                •
+                <a href="https://github.com/Kiikurage/keymapgen/issues" target="_blank" rel="noopener">
+                    🐛 Report Issues
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <script type="module" src="src/main.ts"></script>
+</body>
+</html>

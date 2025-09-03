@@ -1,0 +1,184 @@
+{
+  "mappings": {
+    "file.new": {
+      "command": "File.NewFile",
+      "scope": "Global"
+    },
+    "file.open": {
+      "command": "File.OpenFile",
+      "scope": "Global"
+    },
+    "file.save": {
+      "command": "File.SaveSelectedItems",
+      "scope": "Global"
+    },
+    "file.saveAs": {
+      "command": "File.SaveSelectedItemsAs",
+      "scope": "Global"
+    },
+    "file.close": {
+      "command": "File.Close",
+      "scope": "Global"
+    },
+    "edit.undo": {
+      "command": "Edit.Undo",
+      "scope": "Global"
+    },
+    "edit.redo": {
+      "command": "Edit.Redo",
+      "scope": "Global"
+    },
+    "edit.cut": {
+      "command": "Edit.Cut",
+      "scope": "Text Editor"
+    },
+    "edit.copy": {
+      "command": "Edit.Copy",
+      "scope": "Text Editor"
+    },
+    "edit.paste": {
+      "command": "Edit.Paste",
+      "scope": "Text Editor"
+    },
+    "edit.selectAll": {
+      "command": "Edit.SelectAll",
+      "scope": "Text Editor"
+    },
+    "edit.find": {
+      "command": "Edit.Find",
+      "scope": "Global"
+    },
+    "edit.replace": {
+      "command": "Edit.Replace",
+      "scope": "Global"
+    },
+    "navigation.goToLine": {
+      "command": "Edit.GoTo",
+      "scope": "Text Editor"
+    },
+    "navigation.goToDefinition": {
+      "command": "Edit.GoToDefinition",
+      "scope": "Text Editor"
+    },
+    "navigation.goToDeclaration": {
+      "command": "Edit.GoToDeclaration",
+      "scope": "Text Editor"
+    },
+    "navigation.goBack": {
+      "command": "View.NavigateBackward",
+      "scope": "Global"
+    },
+    "navigation.goForward": {
+      "command": "View.NavigateForward",
+      "scope": "Global"
+    },
+    "navigation.nextWord": {
+      "command": "Edit.WordNext",
+      "scope": "Text Editor"
+    },
+    "navigation.previousWord": {
+      "command": "Edit.WordPrevious",
+      "scope": "Text Editor"
+    },
+    "navigation.selectNextWord": {
+      "command": "Edit.WordNextExtend",
+      "scope": "Text Editor"
+    },
+    "navigation.selectPreviousWord": {
+      "command": "Edit.WordPreviousExtend",
+      "scope": "Text Editor"
+    },
+    "navigation.addCursorAtNextMatch": {
+      "command": "Edit.FindNext",
+      "scope": "Text Editor"
+    },
+    "navigation.removeCursorAtPreviousMatch": {
+      "command": "Edit.FindPrevious",
+      "scope": "Text Editor"
+    },
+    "navigation.lineEnd": {
+      "command": "Edit.LineEnd",
+      "scope": "Text Editor"
+    },
+    "navigation.lineStart": {
+      "command": "Edit.LineStart",
+      "scope": "Text Editor"
+    },
+    "navigation.fileEnd": {
+      "command": "Edit.DocumentEnd",
+      "scope": "Text Editor"
+    },
+    "navigation.fileStart": {
+      "command": "Edit.DocumentStart",
+      "scope": "Text Editor"
+    },
+    "code.format": {
+      "command": "Edit.FormatDocument",
+      "scope": "Text Editor"
+    },
+    "code.comment": {
+      "command": "Edit.CommentSelection",
+      "scope": "Text Editor"
+    },
+    "code.fold": {
+      "command": "Edit.CollapseCurrentRegion",
+      "scope": "Text Editor"
+    },
+    "code.unfold": {
+      "command": "Edit.ExpandCurrentRegion",
+      "scope": "Text Editor"
+    },
+    "code.foldCurrent": {
+      "command": "Edit.CollapseCurrentRegion",
+      "scope": "Text Editor"
+    },
+    "code.unfoldCurrent": {
+      "command": "Edit.ExpandCurrentRegion",
+      "scope": "Text Editor"
+    },
+    "code.foldAll": {
+      "command": "Edit.CollapsetoDefinitions",
+      "scope": "Text Editor"
+    },
+    "code.unfoldAll": {
+      "command": "Edit.ExpandAllOutlining",
+      "scope": "Text Editor"
+    },
+    "code.rename": {
+      "command": "Refactor.Rename",
+      "scope": "Text Editor"
+    },
+    "debug.start": {
+      "command": "Debug.Start",
+      "scope": "Global"
+    },
+    "debug.stepOver": {
+      "command": "Debug.StepOver",
+      "scope": "Global"
+    },
+    "debug.stepInto": {
+      "command": "Debug.StepInto",
+      "scope": "Global"
+    },
+    "debug.stepOut": {
+      "command": "Debug.StepOut",
+      "scope": "Global"
+    },
+    "debug.continue": {
+      "command": "Debug.Continue",
+      "scope": "Global"
+    },
+    "debug.toggleBreakpoint": {
+      "command": "Debug.ToggleBreakpoint",
+      "scope": "Text Editor"
+    },
+    "terminal.newTerminal": {
+      "command": "View.Terminal",
+      "scope": "Global"
+    },
+    "terminal.closeTerminal": {
+      "command": "Window.CloseDocumentWindow",
+      "scope": "Global"
+    }
+  }
+}

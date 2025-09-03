@@ -1,0 +1,99 @@
+# IntelliJ IDE Action to Command Mappings
+# This file maps generic action IDs to IntelliJ-specific action IDs
+
+mappings:
+  file.new:
+    command: "NewFile"
+  file.open:
+    command: "OpenFile"
+  file.save:
+    command: "SaveDocument"
+  file.saveAs:
+    command: "SaveAs"
+  file.close:
+    command: "CloseContent"
+  
+  edit.undo:
+    command: "$Undo"
+  edit.redo:
+    command: "$Redo"
+  edit.cut:
+    command: "$Cut"
+  edit.copy:
+    command: "$Copy"
+  edit.paste:
+    command: "$Paste"
+  edit.selectAll:
+    command: "$SelectAll"
+  edit.find:
+    command: "Find"
+  edit.replace:
+    command: "Replace"
+  
+  navigation.goToLine:
+    command: "GotoLine"
+  navigation.goToDefinition:
+    command: "GotoDeclaration"
+  navigation.goToDeclaration:
+    command: "GotoDeclaration"
+  navigation.goBack:
+    command: "Back"
+  navigation.goForward:
+    command: "Forward"
+  navigation.nextWord:
+    command: "EditorNextWord"
+  navigation.previousWord:
+    command: "EditorPreviousWord"
+  navigation.selectNextWord:
+    command: "EditorNextWordWithSelection"
+  navigation.selectPreviousWord:
+    command: "EditorPreviousWordWithSelection"
+  navigation.addCursorAtNextMatch:
+    command: "SelectNextOccurrence"
+  navigation.removeCursorAtPreviousMatch:
+    command: "UnselectPreviousOccurrence"
+  navigation.lineEnd:
+    command: "EditorLineEnd"
+  navigation.lineStart:
+    command: "EditorLineStart"
+  navigation.fileEnd:
+    command: "EditorTextEnd"
+  navigation.fileStart:
+    command: "EditorTextStart"
+  
+  code.format:
+    command: "ReformatCode"
+  code.comment:
+    command: "CommentByLineComment"
+  code.fold:
+    command: "CollapseRegion"
+  code.unfold:
+    command: "ExpandRegion"
+  code.foldCurrent:
+    command: "CollapseRegion"
+  code.unfoldCurrent:
+    command: "ExpandRegion"
+  code.foldAll:
+    command: "CollapseAll"
+  code.unfoldAll:
+    command: "ExpandAll"
+  code.rename:
+    command: "RenameElement"
+  
+  debug.start:
+    command: "Debug"
+  debug.stepOver:
+    command: "StepOver"
+  debug.stepInto:
+    command: "StepInto"
+  debug.stepOut:
+    command: "StepOut"
+  debug.continue:
+    command: "Resume"
+  debug.toggleBreakpoint:
+    command: "ToggleLineBreakpoint"
+  
+  terminal.newTerminal:
+    command: "ActivateTerminalToolWindow"
+  terminal.closeTerminal:
+    command: "CloseContent"

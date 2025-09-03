@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "KeymapConfig",
+  "description": "Schema for keymap configuration YAML files",
+  "type": "object",
+  "required": ["name", "keymaps"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Name of the keymap configuration"
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional description of the keymap configuration"
+    },
+    "keymaps": {
+      "type": "object",
+      "description": "Mapping of action IDs to keyboard shortcuts",
+      "patternProperties": {
+        "^[a-zA-Z][a-zA-Z0-9]*\\.[a-zA-Z][a-zA-Z0-9]*$": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Keyboard shortcut for the action"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
